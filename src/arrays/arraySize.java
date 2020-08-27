@@ -7,27 +7,29 @@ package arrays;
    Input array: [1, 2, 3, 4, 5, 6 , 7, 8, 9, 10]
    Output array: [6 , 7, 8, 9, 10]
 
+   clip from index 3 to index 7;
  */
+
+import java.util.Arrays;
 
 public class arraySize {
     public static void main(String[] args) {
 
-        int numbers [];
-        //insert value
-        numbers = new int[10];
-        numbers[0]= 1;
-        numbers[1]= 2;
-        numbers[2]= 3;
-        numbers[3]= 4;
-        numbers[4]= 5;
-        numbers[5]= 6;
-        numbers[6]= 7;
-        numbers[7]= 8;
-        numbers[8]= 9;
-        numbers[9]=10;
+        // create an int type array of sie 10
+        int[] numbers = new int[10];
+        int[] newArray = new int[5];
 
-        System.out.println(numbers[5] + "," + numbers[6] + ","+ numbers[7] + ","+
-                numbers[8]+ "," + numbers[9]);
+        //insert values 1 to 10 into the numbers array
+        for (int i = 0; i < numbers.length; i++){
+            numbers[i] = i + 1;
+        }
 
+        // copy the last 5 elements of numbers array into newArray
+        for (int i = 0; i < 5; i++){
+            newArray[i] = numbers[i + 5];
+        }
+
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(newArray));
     }
 }
