@@ -10,22 +10,22 @@ package arrays;
 */
 
 
+import java.util.Arrays;
+
 public class multiplyArray {
 
     public static void main(String[] args) {
 
-        //creat an array
+        //create an array
         int[] numbers = {1, 2, 3, 4, 5};
-        int[] number = new int [6];
+        int[] newNumbers = new int [5];
 
         // insert value in an array
-        int num = 10;
-        for (int i = 1 ; i <= number.length - 1; i++){
-            number[i] = num * i;
-            System.out.println(number[i]);
-
-
+        for (int i = 0 ; i <= newNumbers.length - 1; i++){
+            newNumbers[i] = numbers[i] * 10;
         }
 
+        System.out.println(Arrays.toString(newNumbers));
+        System.out.println(Arrays.toString(numbers));
     }
 }
