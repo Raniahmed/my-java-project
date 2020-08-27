@@ -6,6 +6,7 @@ package arrays;
 * - index of an array: first index = 0, last index: arrayLength - 1
 * - array length
 * - print method
+
 * */
 
 public class PrintArray {
