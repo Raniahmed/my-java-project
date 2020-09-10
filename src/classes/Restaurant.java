@@ -12,9 +12,9 @@ public class Restaurant {
 
     // Instance Variable
 
-    String name = "Star";
-    double guestCapacity;
-    double guestCount;
+    private String name;
+    private int guestCapacity;
+    private int guestCount;
 
     // Constructor
     public Restaurant(){
@@ -22,22 +22,23 @@ public class Restaurant {
     }
     // getter and setter
 
-    public double getSeats(double guestCapacity,double guestCount){
-        return guestCapacity - guestCount;
-    }
-    public double getGuestCapacity(double guestCapacity){
-        return guestCapacity;
-    }
-    public void setGuestCapacity(double guestCapacity){
-        this.guestCapacity = guestCapacity;
-    }
-    public double getGuestCount(double guestCount){
-        return guestCount;
-    }
-    public void setGuestCount(double guestCount){
-        this.guestCount = guestCount;
+    public boolean seatsAvailable(int guestCount){
+        int availableSeats = this.guestCapacity-this.guestCount;
+        return availableSeats >= guestCount;
     }
 
+    public void seatsParty(int guestCount){
+        if(seatsAvailable(guestCount)){
+            this.guestCount += guestCount;
+
+        }
+
+
+        }
+
     }
+
+
+
 
 
