@@ -3,24 +3,27 @@ package classes;
 public class Square {
 
     //instance variable
-
     private double side;
-
+    private String color;
 
     // constructor
-
     public Square(){
-
+        this.side = 0.0;
     }
 
     public Square(double side){
         this.side = side;
-
-
     }
 
-    // getters and setters
+    public Square(double side, Square  square) {
+        this.side = side;
+        this.color = "Blue";
 
+        square.side = side;
+        square.color = "Red";
+
+    }
+    // getters and setters
     double getSide(){
         return side;
     }
@@ -32,6 +35,10 @@ public class Square {
         this.side = side;
     }
 
+    String getColor(){
+        return color;
+    }
+
 
 
     // Calculate and return value
@@ -39,6 +46,7 @@ public class Square {
         return side * side ;
     }
 
+    // a + a + a + a = 4 * a
 
     }
 
