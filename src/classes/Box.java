@@ -20,9 +20,33 @@ package classes;
 
 public class Box {
     // instance variables
-    double height;
-    double width;
-    double depth;
+    private double height;
+    private double width;
+    private double depth;
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getDepth() {
+        return depth;
+    }
+
+    public void setDepth(double depth) {
+        this.depth = depth;
+    }
 
     // doesn't return any value
     void displayVolume() {
@@ -34,4 +58,6 @@ public class Box {
     public double getVolume() {
         return width * height * depth;
     }
+
+
 }

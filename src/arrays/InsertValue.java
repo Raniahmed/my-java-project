@@ -16,21 +16,47 @@ package arrays;
         numbers[index + 5] = 10;
 * */
 
+import java.util.Arrays;
+
 public class InsertValue {
 
-    public static void main(String[] args) {
-        //create an array
-        int[] numbers = new int[5];
+    // insert values from 1 to 10 and return the array
+    public static int[] insertValues(int[] arr){
+        int numbers = 1;
+        for(int i = 0; i <= arr.length-1 ; i ++){
+            arr[i] = numbers + 1;
+        }
 
-        //insert values into the array
-        int number = 10;
-        for (int i = 0; i <= numbers.length - 1; i++){
-            numbers[i] = number + i;
+        return arr;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = new int[10];
+        insertValues(arr);
+        System.out.println(Arrays.toString(insertValues(arr)));
+
+
+
+
+
+
+
+        //create an array
+        //int[] numbers = new int[5];
+
+        ////insert values into the array
+        //int number = 10;
+        //for (int i = 0; i <= numbers.length - 1; i++){
+            //numbers[i] = number + i;
         }
 
         // print values
-        for (int i = 0; i <= numbers.length - 1; i++){
-            System.out.println(numbers[i]);
-        }
+        //for (int i = 0; i <= numbers.length - 1; i++){
+           // System.out.println(numbers[i]);
+        //}
+
+        //int[] arr = new int[10];
+        // print the array here
     }
-}
+
+//}

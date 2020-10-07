@@ -20,18 +20,18 @@ public class BoxMain {
         Box box2 = new Box();
 
         // set values to the properties of object box1
-        box1.height = 3;
-        box1.width = 4;
-        box1.depth = 5;
+        box1.setHeight(3);
+        box1.setWidth(4);
+        box1.setDepth(5);
 
         // get values to the properties of object box2
-        box2.height = 6;
-        box2.width = 7;
-        box2.depth = 8;
+        box2.setHeight(3);
+        box2.setWidth(4);
+        box2.setDepth(5);
 
         // get the value of each property of a Box
-        System.out.println("Height: " + box1.height + ", Width: " + box1.width + ", Depth: " + box1.depth);
-        System.out.println("Height: " + box2.height + ", Width: " + box2.width + ", Depth: " + box2.depth);
+        System.out.println("Height: " + box1.getHeight() + ", Width: " + box1.getWidth() + ", Depth: " + box1.getDepth());
+        System.out.println("Height: " + box2.getHeight() + ", Width: " + box2.getWidth() + ", Depth: " + box2.getDepth());
 
         System.out.println("Volume1: "  + box1.getVolume());
         System.out.println("Volume2: " + box2.getVolume());

@@ -2,10 +2,8 @@ package classes;
 
 public class Calculator {
 
-    // addition
-    int add(int a, int b){
-        return a + b;
-    }
+    int c;
+    double d;
 
     int add(int[] numbers){
         int sum = 0;
@@ -15,14 +13,22 @@ public class Calculator {
         return sum;
     }
 
+    // addition
+    int add(int a, int b){
+        c = a + b;
+        return c;
+    }
+
     // subtraction
     double subtract(double a, double b) {
-        return (a - b);
+        d = a - b;
+        return d;
     }
 
     // multiplication
     double multiply(double a, double b){
-        return a * b;
+        d = a * b;
+        return d;
     }
 
     // divide

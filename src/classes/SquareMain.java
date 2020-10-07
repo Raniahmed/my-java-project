@@ -4,6 +4,7 @@ public class SquareMain {
     public static void main(String[] args) {
 
         // create object a Square class
+        Square sq = new Square();
         Square large = new Square(10);
         Square medium = new Square(8);
         Square small = new Square(5);
@@ -24,6 +25,10 @@ public class SquareMain {
 
         System.out.println(xs.getColor());
         System.out.println(small.getColor());
+
+        System.out.println(Square.isSmaller(small, medium));
+        System.out.println(large.isLarger(medium));
+        System.out.println(small.isLarger(medium));
 
     }
 }

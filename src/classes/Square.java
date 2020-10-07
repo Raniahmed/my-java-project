@@ -8,14 +8,17 @@ public class Square {
 
     // constructor
     public Square(){
-        this.side = 0.0;
+        System.out.println("Inside no parameter constructor");
+        //this.side = 0.0;
     }
 
     public Square(double side){
+        System.out.println("inside one param const");
         this.side = side;
     }
 
     public Square(double side, Square  square) {
+        System.out.println("inside two param const");
         this.side = side;
         this.color = "Blue";
 
@@ -46,7 +49,21 @@ public class Square {
         return side * side ;
     }
 
-    // a + a + a + a = 4 * a
+    // compare two squares
+    static boolean isSmaller(Square square1, Square square2){
+        if(square1.side < square2.side){
+            return true;
+        }
+
+        return false;
+    }
+
+    boolean isLarger(Square obj){
+        if(this.side > obj.side){
+            return true;
+        }
+        return false;
+    }
 
     }
 
